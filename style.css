@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+:root {
+  /* Layout */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+
+  /* Primary Colors */
+  --color-primary-text-very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --color-primary-text-soft-red: hsl(14, 88%, 65%);
+
+  /* Gradient Colors */
+  --color-primary-gradient-soft-violet: hsl(273, 75%, 66%);
+  --color-primary-gradient-soft-blue: hsl(240, 73%, 65%);
+
+  /* Neutral Colors */
+  --color-neutral-text-very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --color-neutral-text-dark-grayish-blue: hsl(240, 6%, 50%);
+  --color-neutral-dividers-light-grayish-blue: hsl(240, 5%, 91%);
+
+  /* Typography */
+  --font-family-body: "Kumbh Sans", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-size-body: 12px;
+}
+
+body {
+  font-family: var(--font-family-body);
+  background: linear-gradient(
+    to bottom,
+    var(--color-primary-gradient-soft-violet),
+    var(--color-primary-gradient-soft-blue)
+  );
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+}
+.faq {
+  /* Styles for the main FAQ block */
+  display: grid;
+  place-items: center;
+}
+
+.faq__section {
+  background-color: #fff;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: min(100%, 50rem);
+
+  /* Styles for the section containing the FAQ */
+}
+
+.faq__image {
+  /* Styles for the image container */
+  background-image: url(/images/illustration-woman-online-desktop.svg),
+    url(/images/bg-pattern-desktop.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left -5rem bottom 4rem, left -36rem bottom -10rem;
+  position: relative;
+}
+.faq__image::before {
+  content: "";
+  background: url(images/illustration-box-desktop.svg) no-repeat;
+  width: 140px;
+  height: 190px;
+  position: absolute;
+  top: 66%;
+  left: -14.2%;
+  transform: translate(-55%, -55%);
+}
+.faq__image,
+.faq__content {
+  padding: 2rem 1rem;
+  /* Styles for the image */
+}
+
+.faq__content {
+  /* Styles for the article content */
+}
+
+.faq__title {
+  /* Styles for the FAQ title */
+}
+
+.faq__list {
+}
+
+.faq__item {
+ 
+}
+
+.faq__question {
+  font-weight: ;
+}
+
+.faq__answer {
+}
+
+/* styles for the attribution footer */
+.attribution {
+}
+
+.attribution a {
+}
+
+.attribution a:hover {
+}
